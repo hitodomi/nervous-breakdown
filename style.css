@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.game-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(121, 98, 98, 0.1);
+    overflow: auto;
+    text-align: center;
+}
+
+.board {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+    border: 1px solid #000;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cardMatchAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card.matched {
+    animation: cardMatchAnimation 1s ease-out;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* ボタンのスタイル */
+#reset-button {
+    margin-top: 10px; /* タイトルからのマージンを調整 */
+}

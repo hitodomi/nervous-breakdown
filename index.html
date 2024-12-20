@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神経衰弱ゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>神経衰弱ゲーム</h1>
+        <h2 id="moves-counter">手数: <span id="moveCount">0</span></h2>
+        <!-- リセットボタンをタイトルと手数の間に移動 -->
+        <button id="reset-button">リセット</button>
+        <div id="video-background">
+            <video autoplay loop muted playsinline>
+                <source src="your-video.mp4" type="video/mp4">
+                ブラウザがビデオタグをサポートしていません。
+            </video>
+        </div>
+        <div class="board" id="board"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
